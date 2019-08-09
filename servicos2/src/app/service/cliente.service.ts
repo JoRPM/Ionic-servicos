@@ -10,6 +10,7 @@ const httpOptions = {
 };
 
 @Injectable({
+  //senha e login do banco de dados....
   providedIn: 'root'
 })
 export class ClienteService {
@@ -29,4 +30,21 @@ export class ClienteService {
 getCliente(email: string){
   return this.http.get<Cliente>(`${API_URL}/cliente?emailCliente=${(email)}`, httpOptions);
 }
+//Pesquisar todos os clientes
+
+getClientes(){
+  return this.http.get<Cliente>(`${API_URL}/clientes`, httpOptions);
+}
+
+updateCliente(cliente: Cliente){
+  return this.http.post<Cliente>(`${API_URL}/clientes`, cliente, httpOptions);
+}
+
+//Apagar um registro
+deleteCliente(email: string){
+  return
+  this.http.delete(`${API_URL}/clientes/${email}`, httpOptions);
+}
+
+
 }

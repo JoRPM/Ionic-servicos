@@ -10,7 +10,8 @@
 </ion-header>
 
 <ion-content>
-<form>
+  <form [formGroup]='formCliente' (submit)='addCliente()'>
+
 <ion-item> 
  <label fixed>Nome:</label>
  <ion-input type="text" name="nome" placeholder="Digite o Nome" min="2" maxlenght="100"></ion-input> 
@@ -21,14 +22,14 @@
    </ion-item>
 <ion-item>
    <label fixed>Endereço:</label>
-   <ion-input type="text" name="email" placeholder="Digite o Endereço" min="2" maxlenght="100"></ion-input> 
+   <ion-input type="text" name="endereco" placeholder="Digite o Endereço" min="2" maxlenght="100"></ion-input> 
   </ion-item>
 <ion-item>
   <label fixed>Senha:</label>
     <ion-input type="password" name="senha" placeholder="Digite a senha" min="2" maxlenght="100"></ion-input> 
    </ion-item>
 
-<ion-button color="warning">Cadastrar</ion-button>
+<ion-button type='submit' color="warning">Cadastrar</ion-button>
 
   
 

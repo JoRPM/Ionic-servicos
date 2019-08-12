@@ -10,34 +10,33 @@
 </ion-header>
 
 <ion-content>
-  <form>
+  <form [formGroup] = 'formProfissional' (submit)= 'addP()'>
     <ion-item> 
      <label fixed>Nome:</label>
-     <ion-input type="text" name="nome" placeholder="Digite o Nome" min="2" maxlenght="100"></ion-input> 
+     <ion-input type="text" name="nome" formControlName="nome" placeholder="Digite o Nome" min="2" maxlenght="100"></ion-input> 
     </ion-item>
     <ion-item> 
         <label fixed>Email:</label>
-        <ion-input type="text" name="email" placeholder="Digite o Email" min="2" maxlenght="100"></ion-input> 
+        <ion-input type="text" name="email" formControlName="email" placeholder="Digite o Email" min="2" maxlenght="100"></ion-input> 
        </ion-item>
     <ion-item>
        <label fixed>Endereço:</label>
-       <ion-input type="text" name="email" placeholder="Digite o Endereço" min="2" maxlenght="100"></ion-input> 
+       <ion-input type="text" name="email" formControlName="endereco" placeholder="Digite o Endereço" min="2" maxlenght="100"></ion-input> 
       </ion-item>
     <ion-item>
       <label fixed>Senha:</label>
-        <ion-input type="password" name="senha" placeholder="Digite a senha" min="2" maxlenght="100"></ion-input> 
+        <ion-input type="password" name="senha" formControlName="senha" placeholder="Digite a senha" min="2" maxlenght="100"></ion-input> 
        </ion-item>
        <ion-item>
         <ion-label>Serviços:</ion-label>
-        <ion-select value="levelup" okText="Okay" cancelText="Dismiss">
-          <ion-select-option value="levelup">LevelUp</ion-select-option>
-          <ion-select-option value="coins">Coins</ion-select-option>
-          <ion-select-option value="uniqueweapon">Unique Weapon</ion-select-option>
-          
+        <ion-select name="servico" formControlName="servico" value="levelup" okText="Okay" cancelText="Dismiss">
+          <ion-select-option value="levelup" name="levelup">LevelUp</ion-select-option>
+          <ion-select-option value="coins" name="coins">Coins</ion-select-option>
+          <ion-select-option value="uniqueweapon" name="uniqueweapon">Unique Weapon</ion-select-option>
         </ion-select>
       </ion-item>
     
-    <ion-button color="warning">Cadastrar</ion-button>
+    <ion-button type='submit' color="warning">Cadastrar</ion-button>
     
       
     

@@ -1,0 +1,82 @@
+{
+  "cliente": [
+    {
+      "id": 1,
+      "nome": "joaozinho",
+      "endereco": "sdada",
+      "email": "jasjas@gmail.com",
+      "senha": "joa123"
+    },
+    {
+      "nome": "ftjftj",
+      "email": "tyhertg@dfsgv.com",
+      "endereco": "ftjgv",
+      "senha": "yhujkmgh",
+      "id": 2
+    },
+    {
+      "nome": "João Doidão",
+      "email": "joao@zemane.com",
+      "endereco": "casa de lá, não a daqui",
+      "senha": "123456789",
+      "id": 3
+    }
+  ],
+  "profissional": [
+    {
+      "nome": "",
+      "email": "",
+      "endereco": "",
+      "senha": "",
+      "servico": "",
+      "id": 1
+    },
+    {
+      "nome": "",
+      "email": "",
+      "endereco": "",
+      "senha": "",
+      "servico": "",
+      "id": 2
+    },
+    {
+      "nome": "",
+      "email": "",
+      "endereco": "",
+      "senha": "",
+      "servico": "",
+      "id": 3
+    },
+    {
+      "nome": "dasda",
+      "email": "dasdad@dsad.com",
+      "endereco": "dsdadsa",
+      "senha": "dadsa",
+      "servico": "",
+      "id": 4
+    },
+    {
+      "nome": "dsadasd",
+      "email": "dasdasd@dasda.com",
+      "endereco": "sdadsada",
+      "senha": "sdadsa",
+      "id": 5
+    },
+    {
+      "nome": "dsdasda",
+      "email": "ds@dsa.com",
+      "endereco": "sadasda",
+      "senha": "dsdadsa",
+      "servico": "",
+      "id": 6
+    },
+    {
+      "nome": "dsdasda",
+      "email": "ds@dsa.com",
+      "endereco": "sadasda",
+      "senha": "dsdadsa",
+      "servico": "",
+      "id": 7
+    }
+  ]
+}

@@ -1,9 +1,40 @@
 import { Injectable } from '@angular/core';
+import { HttpHeaders, HttpClient } from '@angular/common/http';
+import { Profissional } from '../models/profissional.model';
+
+const API_URL = 'http://localhost:3000';
+const httpOptions = {
+  headers: new HttpHeaders (
+    {'Content-Type' : 'application/json; charset=utf-8'}
+  )
+};
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProfissionalService {
 
-  constructor() { }
+  constructor(private http: HttpClient) {}
+  
+    
+    addPro(profissional: Profissional){
+      return this.http.post(`${API_URL}/profissional`, profissional, httpOptions)
+
+    }
+
+    getPro(email: string){
+      return this.http.get<Profissional>(`${API_URL}/profissional?emailProfissional=${(email)}`, httpOptions);
+    }
+
+    getPros(){
+      return this.http.get<Profissional>(`${API_URL}/profissionals`, httpOptions);
+    }
+
+    updatePro(profissional: Profissional){
+      return this.http.post<Profissional>(`${API_URL}/profissionals`, profissional, httpOptions);
+    }
+    deletePro(email: string){
+      return this.http.delete(`${API_URL}/profissionals/${email}`, httpOptions);
+    }
 }

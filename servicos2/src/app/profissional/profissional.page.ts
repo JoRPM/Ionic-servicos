@@ -49,7 +49,7 @@ export class ProfissionalPage implements OnInit {
           Validators.required
         ]
       ],
-      servico: ["",
+      tipoServico: ["",
       [
         Validators.required
       ]

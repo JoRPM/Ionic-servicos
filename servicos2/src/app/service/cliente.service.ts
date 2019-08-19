@@ -33,17 +33,17 @@ getCliente(email: string){
 //Pesquisar todos os clientes
 
 getClientes(){
-  return this.http.get<Cliente>(`${API_URL}/clientes`, httpOptions);
+  return this.http.get<Cliente[]>(`${API_URL}/cliente`, httpOptions);
 }
 
 updateCliente(cliente: Cliente){
-  return this.http.post<Cliente>(`${API_URL}/clientes`, cliente, httpOptions);
+  return this.http.post<Cliente>(`${API_URL}/cliente`, cliente, httpOptions);
 }
 
 //Apagar um registro
 deleteCliente(email: string){
   return
-  this.http.delete(`${API_URL}/clientes/${email}`, httpOptions);
+  this.http.delete(`${API_URL}/cliente/${email}`, httpOptions);
 }
 
 

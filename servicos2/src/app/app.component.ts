@@ -30,7 +30,14 @@ export class AppComponent {
       title: 'Profissional',
       url: '/profissional',
       icon: 'list'
+    },
+
+    {
+      title: 'ListaCliente',
+      url: '/listacliente',
+      icon: 'list'
     }
+
   ];
 
   constructor(

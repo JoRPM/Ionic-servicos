@@ -23,6 +23,7 @@ export class ClientePage implements OnInit {
 
   ngOnInit(): void{
 
+    
     this.formCliente = this.formBuilder.group({
       nome: ["",[
         //parâmetro responsável pela validação do contéudo do campo
@@ -72,4 +73,5 @@ console.log(novoCliente)
         this.formCliente.reset();
       }
   }
+
 }

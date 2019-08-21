@@ -1,11 +1,14 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>listacliente</ion-title>
+      <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+    <ion-title color="primary">Lista de clientes</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div class="container">
+  <!--<div class="container">
   <table class="table">
   <thead>
   <tr>
@@ -24,7 +27,17 @@
   </tr>
   </tbody>
   </table>
-  </div>
-  
+  </div>-->
+  <ion-item  *ngFor="let c of cliente">
+  <ion-thumbnail slot="start">
+    <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+  </ion-thumbnail>
+  <ion-label>
+    <h1>{{c.email}}</h1>
+    <h3>{{c.nome}}</h3>
+    <h3>{{c.endereco}}</h3>
+    <h4>{{c.senha}}</h4>
+  </ion-label>
+</ion-item>
   
 </ion-content>

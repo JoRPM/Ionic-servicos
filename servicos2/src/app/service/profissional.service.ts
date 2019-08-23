@@ -28,13 +28,13 @@ export class ProfissionalService {
     }
 
     getPros(){
-      return this.http.get<Profissional>(`${API_URL}/profissionals`, httpOptions);
+      return this.http.get<Profissional[]>(`${API_URL}/profissional`, httpOptions);
     }
 
     updatePro(profissional: Profissional){
-      return this.http.post<Profissional>(`${API_URL}/profissionals`, profissional, httpOptions);
+      return this.http.post<Profissional>(`${API_URL}/profissional`, profissional, httpOptions);
     }
     deletePro(email: string){
-      return this.http.delete(`${API_URL}/profissionals/${email}`, httpOptions);
+      return this.http.delete(`${API_URL}/profissional/${email}`, httpOptions);
     }
 }

@@ -17,7 +17,8 @@ const routes: Routes = [
   },
   { path: 'cliente', loadChildren: './cliente/cliente.module#ClientePageModule' },
   { path: 'profissional', loadChildren: './profissional/profissional.module#ProfissionalPageModule' },
-  { path: 'listacliente', loadChildren: './listacliente/listacliente.module#ListaclientePageModule' },
+  { path: 'listacliente', loadChildren: './listacliente/listacliente.module#ListaclientePageModule' },  { path: 'listarprofissional', loadChildren: './listarprofissional/listarprofissional.module#ListarprofissionalPageModule' },
+
 ];
 
 @NgModule({

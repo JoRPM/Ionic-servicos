@@ -33,8 +33,14 @@ export class AppComponent {
     },
 
     {
-      title: 'ListaCliente',
+      title: 'ListaClientes',
       url: '/listacliente',
+      icon: 'list'
+    },
+
+    {
+      title: 'listaProfissional',
+      url: '/listarprofissional',
       icon: 'list'
     }
 

@@ -25,4 +25,11 @@ export class ListarprofissionalPage implements OnInit {
       erroDB => console.log(erroDB)
       );
       }
+
+      deleteProfissional(id){
+        this.profissionalService.deletePro(id).subscribe();
+    
+          window.location.reload();
+      }
+
   }

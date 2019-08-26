@@ -10,15 +10,15 @@
 <ion-content>
   <ion-item  *ngFor="let p of profissional">
   <ion-thumbnail slot="start">
-    <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+    <img src="https://img.ibxk.com.br/2017/06/22/22100428046161.jpg">
   </ion-thumbnail>
   <ion-label>
     <h1>{{p.nome}}</h1>
     <h3>Email:{{p.email}} </h3>
     <h3>Endereço: {{p.endereco}}</h3>
-    <h4>Senha: {{p.senha}}</h4>
     <h4>TipoServico: {{p.tipoServico}}</h4>
   </ion-label>
+<ion-button expand="block" color="primary" (click)="deleteProfissional(p.id)">Deletar</ion-button>
 </ion-item>
-  
+
 </ion-content>

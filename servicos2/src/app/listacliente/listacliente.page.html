@@ -30,14 +30,15 @@
   </div>-->
   <ion-item  *ngFor="let c of cliente">
   <ion-thumbnail slot="start">
-    <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+    <img src="https://img.ibxk.com.br/2017/06/22/22100428046161.jpg">
   </ion-thumbnail>
   <ion-label>
-    <h1>{{c.email}}</h1>
-    <h3>{{c.nome}}</h3>
-    <h3>{{c.endereco}}</h3>
-    <h4>{{c.senha}}</h4>
+    <h1>Nome: {{c.nome}}</h1>
+    <h3>Email: {{c.email}}</h3>
+    <h3>Endereço: {{c.endereco}}</h3>
+    
   </ion-label>
+  <ion-button expand="block" color="primary" (click)="deleteCliente(c.id)">Deletar</ion-button>
 </ion-item>
   
 </ion-content>

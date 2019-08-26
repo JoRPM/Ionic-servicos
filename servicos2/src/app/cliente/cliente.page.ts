@@ -74,4 +74,8 @@ console.log(novoCliente)
       }
   }
 
+  resetar(){
+    this.formCliente.reset();
+  }
+
 }

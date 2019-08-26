@@ -75,4 +75,8 @@ export class ProfissionalPage implements OnInit {
 
   }
 
+  resetar(){
+    this.formProfissional.reset();
+  }
+
 }

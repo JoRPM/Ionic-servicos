@@ -23,8 +23,18 @@ export class ListaclientePage implements OnInit {
       this.clienteService.getClientes().subscribe(
       clienteDB => this.cliente = clienteDB,
       erroDB => console.log(erroDB)
-      );
+      )
       }
-  }
 
+      deleteCliente(id){
+        this.clienteService.deleteCliente(id).subscribe();
+    
+          window.location.reload();
+      }
 
+      atualizaCliente(id: number) {
+        this.router.navigateByUrl(`/listacliente`)
+        }
+  
+
+}

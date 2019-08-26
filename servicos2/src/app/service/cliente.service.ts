@@ -41,9 +41,8 @@ updateCliente(cliente: Cliente){
 }
 
 //Apagar um registro
-deleteCliente(email: string){
-  return
-  this.http.delete(`${API_URL}/cliente/${email}`, httpOptions);
+deleteCliente(email: Cliente){
+  return this.http.delete(`${API_URL}/cliente/${email}`, httpOptions);
 }
 
 

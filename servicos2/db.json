@@ -1,20 +1,6 @@
 {
   "cliente": [
     {
-      "id": 1,
-      "nome": "joaozinho",
-      "endereco": "sdada",
-      "email": "jasjas@gmail.com",
-      "senha": "joa123"
-    },
-    {
-      "nome": "ftjftj",
-      "email": "tyhertg@dfsgv.com",
-      "endereco": "ftjgv",
-      "senha": "yhujkmgh",
-      "id": 2
-    },
-    {
       "nome": "João Doidão",
       "email": "joao@zemane.com",
       "endereco": "casa de lá, não a daqui",
@@ -23,14 +9,6 @@
     }
   ],
   "profissional": [
-    {
-      "nome": "dasdsa",
-      "email": "dasdsa",
-      "endereco": "dadas",
-      "senha": "dasdas",
-      "tipoServico": "uniqueweapon",
-      "id": 9
-    },
     {
       "nome": "João Pedro",
       "email": "joao.legal10@bonitao.com",
